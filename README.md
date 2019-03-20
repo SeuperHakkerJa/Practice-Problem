@@ -1,2 +1,2 @@
 # Practice-Problem
-Some CS or Math Problem collections
+Some CS or Math Problems
