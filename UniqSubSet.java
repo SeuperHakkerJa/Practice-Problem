@@ -4,6 +4,8 @@ public class  UniqSubSet{
   public List<List<Integer>> findSubSet(int[] num) {
    List<List<Integer>> unique_subset = new ArrayList<>();
    List<Integer> list = new ArrayList<>();
+   Arrays.sort(num);
+   subsetHelper(unique_subset, list, num, 0);
 
    return unique_subset;
   
