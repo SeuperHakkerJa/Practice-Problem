@@ -1,13 +1,13 @@
 public class fibo{
 
-  private int last;
-  private int next;
+  private long last;
+  private long next;
 
   public static void main(String[] args){
     fibo f = new fibo();
-    int first = f.getFibo(1);
-    int fifth = f.getFibo(5);
-    int largeFib = f.getFibo(20);
+    long first = f.getFibo(1);
+    long fifth = f.getFibo(5);
+    long largeFib = f.getFibo(100);
     System.out.println(first);
     System.out.println(fifth);
     System.out.println(largeFib);
@@ -17,19 +17,19 @@ public class fibo{
     this.next = 1;
   }
 
-  int getNext(){
-    int temp = this.next;
+  long getNext(){
+    long temp = this.next;
     this.next = this.next + this.last;
     this.last = temp;
     return this.next;
   }
-  int getFibo(){
+  long getFibo(){
     return this.getNext();
   }
-  int getFibo(int n){
+  long getFibo(int n){
     this.last = 1;
     this.next = 1 ;
-    int fibo = 0;
+    long fibo = 0;
 
     if (n <= 0) return 0;
 
